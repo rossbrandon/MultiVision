@@ -1,6 +1,6 @@
-doctype html
-html
-    head
-        link(href="favicon.ico", rel="shortcut icon", type="image/png")
-    body
-        h1 Hello World
+extends ../includes/layout
+
+block main-content
+    section.content
+        div(ng-view)
+    h2= mongoMessage
