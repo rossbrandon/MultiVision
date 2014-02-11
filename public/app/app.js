@@ -5,10 +5,7 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             templateUrl: '/partials/main',
-            controller: 'MainController'
+            controller: 'mvMainController'
         })
 });
 
-app.controller('MainController', function($scope) {
-   $scope.myVar =  'Hello Angular';
-});
