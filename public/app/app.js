@@ -37,6 +37,10 @@ app.config(function($routeProvider, $locationProvider) {
         .when('/courses', {
             templateUrl: '/partials/courses/course-list',
             controller: 'mvCourseListController'
+        })
+        .when('/courses/:id', {
+            templateUrl: '/partials/courses/course-details',
+            controller: 'mvCourseDetailController'
         });
 });
 

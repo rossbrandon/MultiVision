@@ -1,6 +1,6 @@
 app.factory('mvCourse', function($resource) {
     var CourseResource = $resource(
-        '/api/courses/:id',
+        '/api/courses/:_id',
         {
             _id: "@id"
         },
