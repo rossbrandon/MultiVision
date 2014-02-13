@@ -33,6 +33,10 @@ app.config(function($routeProvider, $locationProvider) {
             templateUrl: '/partials/account/profile',
             controller: 'mvProfileController',
             resolve: routeRoleChecks.user
+        })
+        .when('/courses', {
+            templateUrl: '/partials/courses/course-list',
+            controller: 'mvCourseListController'
         });
 });
 
